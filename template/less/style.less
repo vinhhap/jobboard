@@ -21,6 +21,29 @@ body {
     clear: both;
 }
 
+.border {
+  height: 6px;
+  border: 0;
+  background-color: red;
+  background-image:
+    linear-gradient(
+      to right, 
+      @highlight_1,
+      @highlight_1 25%,
+      @highlight_2 25%,
+      @highlight_2 50%,
+      @highlight_3 50%,
+      @highlight_3 75%,
+      @highlight_4 75%,
+      @highlight_4 100%,
+      @highlight_4 100%
+    );
+
+  -webkit-background-size: 50% 100%;
+  -moz-background-size: 50% 100%;
+  background-size: 50% 100%;
+}
+
 @import "home.less";
 @import "job.less";
 @import "sign-in.less";
